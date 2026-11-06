@@ -16,13 +16,16 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #3b2a4a;
     color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 main {
-    padding: 1rem;
+    padding: 126px 1rem 1rem;
 }
 
 h2,
@@ -39,6 +42,11 @@ p {
 nav {
     /* This will force the nav to always be on the second line */
     flex-basis: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: #3b2a4a;
 }
 
 nav ul {
@@ -87,6 +95,7 @@ nav {
     nav {
         max-height: unset;
         flex-basis: auto;
+        position: unset;
     }
 
     nav a {
